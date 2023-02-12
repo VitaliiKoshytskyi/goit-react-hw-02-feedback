@@ -1,16 +1,16 @@
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div> 
+      <h1>Please leave feedback</h1>
+      <ul>
+        <li><button>Good</button></li>
+        <li><button>Neutral</button></li>
+        <li><button>Bad</button></li>
+      </ul>
+      <h2>Statistics</h2>
+      <p>Good:<span></span></p>
+      <p>Neutral:<span></span></p>
+      <p>Bad:<span></span></p>
     </div>
   );
 };
