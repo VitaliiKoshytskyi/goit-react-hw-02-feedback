@@ -37,20 +37,24 @@ class App extends Component {
   };
 
   render() {
-
     return (
-      <div className="Feedback">
-        <Section title=""/>
+      <div className="App">
+        <Section title="" />
         <FeedbackOptions
-          options={Object.keys(this.state) }
-          onLeaveFeedback={ this.onLeaveFeedback} />
-        {this.countTotalFeedback()===0? <Notification message={'There is no feedback'}/> :<Statistics
+          options={Object.keys(this.state)}
+          onLeaveFeedback={this.onLeaveFeedback}
+        />
+        {this.countTotalFeedback() === 0 ? (
+          <Notification message={'There is no feedback'} />
+        ) : (
+          <Statistics
             good={this.state.good}
             neutral={this.state.neutral}
             bad={this.state.bad}
             total={this.countTotalFeedback()}
             positivePercentage={this.countPositiveFeedbackPercentage()}
-          />}
+          />
+        )}
       </div>
     );
   }
