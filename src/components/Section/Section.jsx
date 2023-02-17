@@ -1,12 +1,14 @@
-// import css from './Section.module.css'
+import css from './Section.module.css'
 
 
 const Section = ({ title, children }) => {
-    console.log(children)
-    return <>
-        <h1 className="Feedback__heading">{title}</h1>
+    
+    return (
+         <>
+        <h2 className={css.title}>{title}</h2>
         {children}
     </>
+    )
 }
 
 export default Section

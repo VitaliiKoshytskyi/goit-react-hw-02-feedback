@@ -1,10 +1,10 @@
 // import PropTypes from 'prop-types';
-// import css from './Statistics.module.css';
+import css from './Statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+const Statistics = ({ good, neutral, bad, total, positivePercentage  }) => {
   return (
-    <>
-      <h2 className="Feedback__title">Statistics</h2>
+    <div className={css.box}>
+      
       <p className="Feedback__text">
         Good:<span> {good}</span>
       </p>
@@ -20,7 +20,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       <p className="Feedback__text">
         Positive feedback: <span>{positivePercentage}%</span>
       </p>
-    </>
+    </div>
   );
 };
 
