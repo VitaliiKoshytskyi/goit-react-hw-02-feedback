@@ -5,7 +5,7 @@
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
-      <h1 className="Feedback__heading">Please leave feedback</h1>
+     
       <ul className="Feedback__list">
         {options.map(option => {
           return (
